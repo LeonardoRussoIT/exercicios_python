@@ -10,10 +10,10 @@ valor_casa = float(input('Valor da casa: R$'))
 salario = float(input('Seu salário: R$'))
 anos = int(input('Em quantos anos você vai pagar a casa: '))
 
-prestacao = valor_casa / (anos * 12)
-minimo = salario * 30 / 100
+prestacao = valor_casa / (anos * 12) # quantidade de meses
+minimo = salario * 30 / 100 # 30% do salário
 
-if prestacao > minimo:
+if prestacao > minimo: # Verifica se a prestação é maior que o minímo exigido
     print('Empréstimo negado! Seu salário precisa ser maior')
-else:
+else: # Se não for, faça isso
     print('Empréstimo Aprovado! Parabéns')
